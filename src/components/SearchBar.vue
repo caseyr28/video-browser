@@ -1,7 +1,7 @@
 <template>
     <div>
         <input v-model.lazy="userInput"
-        placeholder="Hey buddy, wydontcha search for a video?"
+        placeholder="Hiya! Search for an awesome video!"
         />
         <button @click="searchQuery">Search</button>
     </div>
