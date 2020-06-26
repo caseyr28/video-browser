@@ -42,6 +42,7 @@ export default {
 }
 .nullDetails h5{
     margin-top: 10%;
+    margin-bottom: 1px;
 }
 .videoContainer{
     position: relative;
