@@ -10,6 +10,7 @@
 </div>
 <div v-else class="nullDetails">
     <h5>Sad trombone! you haven't found a video yet?!?!</h5>
+    <img src="../img/sad.gif" alt="image of Will Ferrel crying, drinking wine" />
 </div>
     
 </template>
@@ -36,8 +37,9 @@ export default {
 .nullDetails{
     width: 66vw;
     height: 100vh;
-    background: url(../img/sad.gif) center center no-repeat;
+    background-image:radial-gradient(#a0e6d9 6px, transparent 6px);
     background-color: #b3ebe1;
+    background-size: 60px 60px;
     text-align: center;
 }
 .nullDetails h5{
