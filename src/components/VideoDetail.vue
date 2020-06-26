@@ -1,0 +1,50 @@
+<template>
+<div v-if="video" class="details">
+    <div>
+        <div class="videoContainer">
+            <iframe class="videoPlayer" :src="videoUrl"/>
+        </div>
+        <h4>{{ video.snippet.title }}</h4>
+        <p>{{  video.snippet.description  }}</p>
+    </div>
+</div>
+    
+</template>
+
+<script>
+export default {
+    name: 'VideoDetail',
+    props: ['video'],
+    computed: {
+        videoUrl() {
+            const { videoId } = this.video.id;
+            return `https://www.youtube.com/embed/${videoId}`;
+        }
+    }
+    
+}
+</script>
+
+<style scoped>
+.details{
+    margin: 5rem;
+}
+.videoContainer{
+    position: relative;
+    width: 100%;
+    padding-bottom:56.25%;
+    height: 0;
+}
+.videoPlayer {
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+h4{
+    margin-top: 2rem;
+}
+
+</style>
