@@ -8,6 +8,9 @@
         >
         </VideoListItem>
     </ul>
+    <!-- <ul v-else class="nullList">
+        <img src="../img/will-smith-empty.gif" alt="image of Will Smith looking at an empty living room" />
+    </ul> -->
 </template>
 
 <script>
@@ -33,6 +36,14 @@ export default {
         list-style: none;
         background-color: #f6fffd;
         padding: 3rem;
+    }
+    
+    .nullList{
+        /* background: url(../img/sad.gif) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; */
     }
 
 </style>

@@ -10,7 +10,7 @@
 </div>
 <div v-else class="nullDetails">
     <h5>Sad trombone! you haven't found a video yet?!?!</h5>
-    <img src="../img/sad.gif" alt="image of Will Ferrel crying, drinking wine" />
+    <!-- <img src="../img/sad.gif" alt="image of Will Ferrel crying, drinking wine" /> -->
 </div>
     
 </template>
@@ -37,11 +37,32 @@ export default {
 .nullDetails{
     width: 66vw;
     height: 100vh;
-    background-image:radial-gradient(#a0e6d9 6px, transparent 6px);
-    background-color: #b3ebe1;
-    background-size: 60px 60px;
+    background: url(../img/sad.gif) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     text-align: center;
 }
+/* .nullDetails:after{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.6;
+    background-image: url(../img/sad.gif);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: contain;
+    -o-background-size: contain;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+} */
 .nullDetails h5{
     margin-top: 10%;
     margin-bottom: 1px;
@@ -60,8 +81,9 @@ export default {
     width: 100%;
     height: 100%;
 }
-h4{
+h5{
     margin-top: 2rem;
+    color: white;
 }
 
 </style>
